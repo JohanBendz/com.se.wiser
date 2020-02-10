@@ -8,7 +8,7 @@ class CCT5010_001 extends ZigBeeDevice {
 
 		// Developer tools
 //		this.enableDebug();
-		this.printNode();
+//		this.printNode();
 
 		// Register capabilities and listeners
 		if (this.hasCapability('onoff')) {
