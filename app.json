@@ -1,0 +1,230 @@
+{
+  "id": "com.se.wiser",
+  "version": "0.0.1",
+  "compatibility": ">=3.0.0",
+  "sdk": 2,
+  "name": {
+    "en": "Schneider Electric Wiser (Zigbee)"
+  },
+  "description": {
+    "en": "Adds support for Schnieder Electric Wiser (Zigbee) devices"
+  },
+  "tags": {
+    "en": ["Schneider", "Wiser", "Light", "Lights", "Exxact", "Zigbee", "Switch", "Rotary", "LED"]
+  },
+  "category": [
+    "lights",
+    "appliances"
+  ],
+  "brandColor": "#3DCD58",
+  "permissions": [
+    "homey:wireless:zigbee"
+  ],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Johan Bendz",
+    "email": "johan_bendz@hotmail.com"
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "JohanBendz"
+      }
+    }
+  },
+  "drivers": [
+    {
+      "id": "CCT5010-0001",
+      "name": {
+        "en": "Micro Module Dimmer (ZigBee)"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        }
+      },
+      "images": {
+        "large": "drivers/CCT5010-0001/assets/images/large.png",
+        "small": "drivers/CCT5010-0001/assets/images/small.png"
+      },
+      "zigbee": {
+        "manufacturerName": "Schneider Electric",
+        "productId": [
+          "PUCK/DIMMER/1"
+        ],
+        "deviceId": 257,
+        "profileId": 260,
+        "learnmode": {
+          "instruction": {
+            "en": "Toggle the pair button or an attached wall switch 3 times quickly.\n\nIf pairing does not automatically start, try toggle the pair button or attached wall switch 3 times quickly, then hold it down until the LED blinks red rapidly (it takes more than 20 seconds) and then try pairing the device again."
+          }
+        }
+      },
+      "settings": [
+        {
+        "id": "retain_dim_level",
+        "type": "checkbox",
+        "value": true,
+        "label": {
+          "en": "Retain dim level on OnOff"
+        },
+        "hint": {
+          "en": "Dim level will be retained on OnOff."
+        }
+        },
+        {
+          "id": "transition_time",
+          "type": "number",
+          "label": {
+            "en": "Transition Time"
+          },
+          "hint": {
+            "en": "This setting determines the time in seconds it takes to dim from one level to another."
+          },
+          "value": 1,
+          "attr": {
+            "min": 0,
+            "max": 6553
+          }
+        }
+      ]
+    },
+    {
+      "id": "WDE002910",
+      "name": {
+        "en": "Relay Switch (ZigBee)"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        }
+      },
+      "images": {
+        "large": "drivers/WDE002910/assets/images/large.png",
+        "small": "drivers/WDE002910/assets/images/small.png"
+      },
+      "zigbee": {
+        "manufacturerName": "Schneider Electric",
+        "productId": [
+          "1GANG/DIMMER/1"
+        ],
+        "deviceId": 257,
+        "profileId": 260,
+        "learnmode": {
+          "instruction": {
+            "en": "Toggle the button 3 times quickly.\n\nIf pairing does not automatically start, try toggle the button 3 times quickly, then hold it down until the LED blinks red rapidly (it takes more than 20 seconds) and then try pairing the device again."
+          }
+        }
+      },
+      "settings": [
+        {
+        "id": "retain_dim_level",
+        "type": "checkbox",
+        "value": true,
+        "label": {
+          "en": "Retain dim level on OnOff"
+        },
+        "hint": {
+          "en": "Dim level will be retained on OnOff."
+        }
+        },
+        {
+          "id": "transition_time",
+          "type": "number",
+          "label": {
+            "en": "Transition Time"
+          },
+          "hint": {
+            "en": "This setting determines the time in seconds it takes to dim from one level to another."
+          },
+          "value": 1,
+          "attr": {
+            "min": 0,
+            "max": 6553
+          }
+        }
+      ]
+    },
+    {
+      "id": "WDE002334",
+      "name": {
+        "en": "Rotary Dimmer (ZigBee)"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        }
+      },
+      "images": {
+        "large": "drivers/WDE002334/assets/images/large.png",
+        "small": "drivers/WDE002334/assets/images/small.png"
+      },
+      "zigbee": {
+        "manufacturerName": "Schneider Electric",
+        "productId": [
+          "NHROTARY/DIMMER/1"
+        ],
+        "deviceId": 257,
+        "profileId": 260,
+        "learnmode": {
+          "instruction": {
+            "en": "Toggle (push) the button 3 times quickly.\n\nIf pairing does not automatically start, try toggle the button 3 times quickly, then hold it down until the LED blinks red rapidly (it takes more than 20 seconds) and then try pairing the device again."
+          }
+        }
+      },
+      "settings": [
+        {
+        "id": "retain_dim_level",
+        "type": "checkbox",
+        "value": true,
+        "label": {
+          "en": "Retain dim level on OnOff"
+        },
+        "hint": {
+          "en": "Dim level will be retained on OnOff."
+        }
+        },
+        {
+          "id": "transition_time",
+          "type": "number",
+          "label": {
+            "en": "Transition Time"
+          },
+          "hint": {
+            "en": "This setting determines the time in seconds it takes to dim from one level to another."
+          },
+          "value": 1,
+          "attr": {
+            "min": 0,
+            "max": 6553
+          }
+        }
+      ]
+    }
+  ],
+  "flow": {}
+}
