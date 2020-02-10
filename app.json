@@ -1,7 +1,7 @@
 {
   "id": "com.se.wiser",
-  "version": "0.0.1",
-  "compatibility": ">=3.0.0",
+  "version": "0.0.2",
+  "compatibility": ">=3.2.0",
   "sdk": 2,
   "name": {
     "en": "Schneider Electric Wiser (Zigbee)"
