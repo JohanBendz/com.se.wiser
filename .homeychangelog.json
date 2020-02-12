@@ -1,5 +1,8 @@
 {
   "0.0.1": {
     "en": "First release. 3 devices supported."
+  },
+  "0.0.2": {
+    "en": "Code cleaning"
   }
 }

@@ -37,7 +37,7 @@
   },
   "drivers": [
     {
-      "id": "CCT5010-0001",
+      "id": "PUCKDIMMER1",
       "name": {
         "en": "Micro Module Dimmer (ZigBee)"
       },
@@ -54,8 +54,8 @@
         }
       },
       "images": {
-        "large": "drivers/CCT5010-0001/assets/images/large.png",
-        "small": "drivers/CCT5010-0001/assets/images/small.png"
+        "large": "drivers/PUCKDIMMER1/assets/images/large.png",
+        "small": "drivers/PUCKDIMMER1/assets/images/small.png"
       },
       "zigbee": {
         "manufacturerName": "Schneider Electric",
@@ -100,7 +100,7 @@
       ]
     },
     {
-      "id": "WDE002910",
+      "id": "1GANGDIMMER1",
       "name": {
         "en": "Relay Switch (ZigBee)"
       },
@@ -117,8 +117,8 @@
         }
       },
       "images": {
-        "large": "drivers/WDE002910/assets/images/large.png",
-        "small": "drivers/WDE002910/assets/images/small.png"
+        "large": "drivers/1GANGDIMMER1/assets/images/large.png",
+        "small": "drivers/1GANGDIMMER1/assets/images/small.png"
       },
       "zigbee": {
         "manufacturerName": "Schneider Electric",
@@ -163,7 +163,7 @@
       ]
     },
     {
-      "id": "WDE002334",
+      "id": "NHROTARYDIMMER1",
       "name": {
         "en": "Rotary Dimmer (ZigBee)"
       },
@@ -180,8 +180,8 @@
         }
       },
       "images": {
-        "large": "drivers/WDE002334/assets/images/large.png",
-        "small": "drivers/WDE002334/assets/images/small.png"
+        "large": "drivers/NHROTARYDIMMER1/assets/images/large.png",
+        "small": "drivers/NHROTARYDIMMER1/assets/images/small.png"
       },
       "zigbee": {
         "manufacturerName": "Schneider Electric",
