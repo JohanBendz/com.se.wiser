@@ -3,6 +3,9 @@
 Adds support for Schnieder Electric Wiser devices
 
 ### Changelog
+0.0.2
+- Code cleanup
+
 0.0.1
 - Initial version
 - Adds support for Micro Module Dimmer
