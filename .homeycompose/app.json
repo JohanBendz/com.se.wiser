@@ -1,0 +1,48 @@
+{
+  "id": "com.se.wiser",
+  "version": "0.0.2",
+  "compatibility": ">=3.2.0",
+  "sdk": 2,
+  "name": {
+    "en": "Schneider Electric Wiser (Zigbee)"
+  },
+  "description": {
+    "en": "Adds support for Schnieder Electric Wiser (Zigbee) devices"
+  },
+  "tags": {
+    "en": [
+      "Schneider",
+      "Wiser",
+      "Light",
+      "Lights",
+      "Exxact",
+      "Zigbee",
+      "Switch",
+      "Rotary",
+      "LED"
+    ]
+  },
+  "category": [
+    "lights",
+    "appliances"
+  ],
+  "brandColor": "#3DCD58",
+  "permissions": [
+    "homey:wireless:zigbee"
+  ],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Johan Bendz",
+    "email": "johan_bendz@hotmail.com"
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "JohanBendz"
+      }
+    }
+  }
+}
